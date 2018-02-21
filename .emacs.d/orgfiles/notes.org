@@ -1,0 +1,19 @@
+* Notes
+** First note entry with org-capture!!
+We did the thing this is much better than simple note. Emacs is pretty ok. 
+<2018-02-18 Sun 12:06>
+** Cool org mode keys to remember 
+C-c C-p jumps to previous headline in org mode
+C-c C-n jumps to next headline in org mode
+Shift plus TAB globally collapses or expands things
+C-c C-s schedules an item 
+C-c C-d defines a deadline
+C-c C-t shows menu of seq things
+C-c C-q shows menu of tags
+C-c C-w refiles an appt or note after capturing it
+C-c / t shows only TODO items
+C-c a a switches to agenda view
+   Shift-F then enables follow mode so that you can see the details of each event
+   F moves forward one week
+   B moves backward
+   <2018-02-18 Sun 17:16>

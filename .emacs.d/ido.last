@@ -1,0 +1,109 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/abhigoyal/.emacs.d/" . "orgfiles/")
+ ("/usr/local/" . "bin/")
+ ("/usr/" . "local/")
+ ("/" . "Users/")
+ ("/Users/" . "abhigoyal/")
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/ViolentPython/" . "CH6/")
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/" . "ViolentPython/")
+ ("/Users/abhigoyal/Documents/Python/" . "pythonPractice/")
+ ("/Users/abhigoyal/Documents/jacobsLab/papers/" . "hippoStimImpair/")
+ ("/Users/abhigoyal/Documents/jacobsLab/" . "papers/")
+ ("/Users/abhigoyal/Documents/emacs/sampleCode/" . "python/")
+ ("/Users/abhigoyal/Documents/emacs/" . "sampleCode/")
+ ("/Users/abhigoyal/documents/jacobsLab/papers/" . "hippoStimImpair/")
+ ("/Users/abhigoyal/documents/jacobsLab/" . "papers/")
+ ("/Users/abhigoyal/documents/" . "jacobsLab/")
+ ("/Users/abhigoyal/Documents/" . "jacobsLab/")
+ ("/Users/abhigoyal/" . ".hammerspoon/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/abhigoyal/Documents/jacobsLab/papers/hippoStimImpair/"
+ "/Users/abhigoyal/"
+ "/Users/abhigoyal/.hammerspoon/"
+ "/Users/abhigoyal/.emacs.d/orgfiles/"
+ "/Users/abhigoyal/.emacs.d/"
+ "/usr/local/bin/"
+ "/Users/abhigoyal/Documents/emacs/sampleCode/python/"
+ "/Users/abhigoyal/Documents/Python/pythonPractice/ViolentPython/CH6/"
+ "/Users/abhigoyal/documents/jacobsLab/papers/hippoStimImpair/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "responseLetter2.tex"
+ ".emacs"
+ "init.lua"
+ "elfeed2.org"
+ "elfeed.org"
+ "org-bullets.el"
+ ".slate.js"
+ "manuscript_2.tex"
+ "Makefile"
+ "#.mbsyncrc#"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/abhigoyal/Documents/jacobsLab/papers/hippoStimImpair/" (23181 30660 0 0) "text_outline.tex" "suppFigs.tex" "reviewPoints.tex" "responseLetter2.tex" "responseLetter2.pdf" "responseLetter2.log" "responseLetter2.fls" "responseLetter2.fdb_latexmk" "responseLetter2.aux" "prv_manuscript_2.log" "memlab.bib" "manuscript_2.tex" "manuscript_2.pdf" "manuscript_2.log" "manuscript_2.fls" "manuscript_2.fdb_latexmk" "manuscript_2.cb2" "manuscript_2.cb" "manuscript_2.blg" "manuscript_2.bbl" "manuscript_2.aux" "Makefile" "hippoStimImpair.tex" "header.pdf" "footer.pdf" "figs/" "coverLetter.tex" "auto/" "authors.tex" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/.emacs.d/" (23180 49626 0 0) "url/" "srecode-map.el" "snippets/" "recentf~" "recentf" "orgfiles/" "org-bullets.el" "network-security.data" "myinit.org~" "myinit.org" "myinit.el" "isync/" "ido.last~" "ido.last" "evil/" "elpa/" "bookmarks" "auto-save-list/" "appt-notification/" "ac-comphist.dat" "abbrev_defs" ".python-environments/" ".mbsyncrc~" ".mbsyncrc" ".mbsyncpass.gpg" ".DS_Store" ".#.mbsyncrc" "#.mbsyncrc#" "../" "./")
+
+ ("/Users/abhigoyal/.hammerspoon/" (23180 39725 0 0) "Spoons/" "init.lua~" "init.lua" "../" "./")
+
+ ("/Users/abhigoyal/" (23180 38511 0 0) "xCode/" "untitled folder/" "Samsung/" "recognizeFace.py" "Public/" "Pictures/" "passphrase" "opencv_contrib/" "OpenCV-android-sdk/" "opencv/" "NX.key" "names.txt" "Music/" "Movies/" "mbsync/" "Library/" "Imaging-1.1.7/" "fjd" "facematch/" "estim_behavioral/" "eeg_options.m" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "crontab" "core.131750" "build/" "boundScore.png" "boundaryAnalysis.m~" "barwitherr.m" "Applications/" "AndroidStudioProjects/" "anaconda/" ".zenmap/" ".Xauthority" ".x2goclient/" ".x2go/" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".slate.js~" ".slate.js" ".rnd" ".Rapp.history" ".oracle_jre_usage/" ".offlineimaprc~" ".offlineimaprc" ".offlineimap/" ".npm/" ".matplotlib/" ".matlab/" ".Mail/" ".lldb/" ".lesshst" ".jupyter/" ".jssc/" ".ipython/" ".hgignore_global" ".hello.py.swp" ".hammerspoon/" ".gradle/" ".gnupg/" ".gitignore_global" ".gitconfig" ".enstaller4rc" ".emulator_console_auth_token" ".emacs~" ".emacs.d/" ".emacs" ".elfeed/" ".DS_Store" ".cups/" ".continuum/" ".chimera/" ".CFUserTextEncoding" ".cert/" ".canopy/" ".cache/" ".bcilab/" ".bash_sessions/" ".bash_profile~" ".bash_profile.macports-saved_2016-12-07_at_21:44:02" ".bash_profile" ".bash_history" ".authinfo~" ".authinfo" ".android/" "../" "./")
+
+ ("/Users/abhigoyal/.emacs.d/orgfiles/" (23180 38865 0 0) "todo.org~" "todo.org" "notes.org~" "notes.org" "links.org" "gcal.org~" "gcal.org" "elfeed2.org~" "elfeed2.org" "elfeed.org~" "elfeed.org" ".#elfeed2.org" "#notes#" "../" "./")
+
+ ("/Users/abhigoyal/documents/jacobsLab/papers/hippoStimImpair/" (23179 22064 0 0) "text_outline.tex" "suppFigs.tex" "reviewPoints.tex" "responseLetter2.tex" "responseLetter2.pdf" "responseLetter2.log" "responseLetter2.fls" "responseLetter2.fdb_latexmk" "responseLetter2.aux" "prv_manuscript_2.log" "memlab.bib" "manuscript_2.tex" "manuscript_2.pdf" "manuscript_2.log" "manuscript_2.fls" "manuscript_2.fdb_latexmk" "manuscript_2.cb2" "manuscript_2.cb" "manuscript_2.blg" "manuscript_2.bbl" "manuscript_2.aux" "Makefile" "hippoStimImpair.tex" "header.pdf" "footer.pdf" "figs/" "coverLetter.tex" "auto/" "authors.tex" ".svn/" ".DS_Store" "../" "./")
+
+ ("/usr/local/bin/" (23179 1007 0 0) "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec" "xzcmp" "xzcat" "xz" "xxd" "xapian-tcpsrv" "xapian-replicate-server" "xapian-replicate" "xapian-progsrv" "xapian-metadata" "xapian-delve" "xapian-config" "xapian-compact" "xapian-check" "wrjpgcom" "wish8.6" "wftopfa" "watchgnupg" "vimtutor" "vimdiff" "vim" "view" "unxz" "unlzma" "unix-lpr.sh" "transicc" "tificc" "tiffsplit" "tiffset" "tiffmedian" "tiffinfo" "tiffdump" "tiffdither" "tiffcrop" "tiffcp" "tiffcmp" "tiff2rgba" "tiff2ps" "tiff2pdf" "tiff2bw" "texindex" "texi2pdf" "texi2dvi" "texi2any" "texdistmgr" "texdist" "tclsh8.6" "symcryptrun" "srptool" "sqlite3_analyzer" "smtpd2.py" "smtpd2.7.py" "simplesearch" "simpleindex" "simpleexpand" "sexp-conv" "rvim" "rview" "Rscript" "rdjpgcom" "raw2tiff" "R" "quest" "pythonw2.7" "pythonw2" "python2.7-config" "python2.7" "python2-config" "python2" "pydoc2.7" "pydoc2" "psktool" "psicc" "ps2ps2" "ps2ps" "ps2pdfwr" "ps2pdf14" "ps2pdf13" "ps2pdf12" "ps2pdf" "ps2epsi" "ps2ascii" "printafm" "ppm2tiff" "pphs" "pod2texi" "pngfix" "png-fix-itxt" "pkg-config" "pkcs1-conv" "pip2.7" "pip2" "pip" "pinentry-curses" "pinentry" "pfbtopfa" "pf2afm" "pdfunite" "pdftotext" "pdftops" "pdftoppm" "pdftohtml" "pdftocairo" "pdftexi2dvi" "pdfseparate" "pdfinfo" "pdfimages" "pdffonts" "pdfdetach" "pdf2ps" "pdf2dsc" "pcretest" "pcregrep" "pcre-config" "pal2rgb" "p11tool" "p11-kit" "opj_dump" "opj_decompress" "opj_compress" "opencv_waldboost_detector" "opencv_visualisation" "opencv_version" "opencv_traincascade" "opencv_interactive-calibration" "opencv_createsamples" "opencv_annotation" "offlineimap" "ocsptool" "ocs" "npth-config" "npm" "nping" "node" "nmap-update" "nmap" "nettle-pbkdf2" "nettle-lfib-stream" "nettle-hash" "ndiff" "ncat" "mvimex" "mvimdiff" "mvim" "mview" "mpicalc" "mbsync-get-cert" "mbsync" "makeinfo" "lzmore" "lzmainfo" "lzmadec" "lzma" "lzless" "lzgrep" "lzfgrep" "lzegrep" "lzdiff" "lzcmp" "lzcat" "lprsetup.sh" "linkicc" "libpng16-config" "libpng-config" "libgcrypt-config" "libassuan-config" "ksba-config" "kbxutil" "jpgicc" "jpegtran" "jamf" "install-info" "infokey" "info" "ifnames" "idle2.7" "idle2" "hmac256" "gvimex" "gvimdiff" "gvim" "gview" "gtester-report" "gtester" "gsnd" "gslp" "gslj" "gsettings" "gsed" "gsdj500" "gsdj" "gsbj" "gs-X11-Yosemite" "gs-X11" "gs-noX11-Yosemite" "gs-noX11" "gs" "gresource" "gpgv" "gpgtar" "gpgsm" "gpgscm" "gpgparsemail" "gpgconf" "gpg-error-config" "gpg-error" "gpg-connect-agent" "gpg-agent" "gpg" "gobject-query" "gnutls-serv" "gnutls-cli-debug" "gnutls-cli" "gnutls-certtool" "glib-mkenums" "glib-gettextize" "glib-genmarshal" "glib-compile-schemas" "glib-compile-resources" "gio-querymodules" "gio" "gdbus-codegen" "gdbus" "gdbmtool" "gdbm_load" "gdbm_dump" "gapplication" "g-ir-scanner" "g-ir-inspect" "g-ir-generate" "g-ir-compiler" "g-ir-annotation-tool" "freetype-config" "font2c" "fc-validate" "fc-scan" "fc-query" "fc-pattern" "fc-match" "fc-list" "fc-cat" "fc-cache" "fax2tiff" "fax2ps" "ex" "eps2eps" "emacsclient" "emacs.sh" "ec.sh~" "ec.sh" "easy_install-2.7" "dvipdf" "dumpsexp" "djpeg" "dirmngr-client" "dirmngr" "ctest" "cscope" "cpack" "copydatabase" "cmatrix" "cmake-gui" "cmake" "cjpeg" "ccmake" "cairo-trace" "cairo-sphinx" "brew" "autoupdate" "autoscan" "autoreconf" "automake-1.15" "automake" "autom4te" "autoheader" "autoconf" "asn1Parser" "asn1Decoding" "asn1Coding" "applygnupgdefaults" "adnsresfilter" "adnslogres" "adnshost" "adnsheloex" "addgnupghome" "aclocal-1.15" "aclocal" "2to3-2.7" "2to3-2" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/.emacs.d/appt-notification/" (23179 19421 0 0) "../" "./")
+
+ ("/usr/" (22600 52467 0 0) "X11/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "adic/" "../" "./")
+
+ ("/usr/local/" (23176 44087 0 0) "var/" "texlive/" "share/" "sbin/" "opt/" "matlab/" "man/" "libexec/" "lib/" "jamf/" "include/" "Homebrew/" "Frameworks/" "etc/" "Cellar/" "bin/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/emacs/sampleCode/python/" (23177 28059 0 0) "instructions.py~" "instructions.py" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/ViolentPython/CH6/" (22361 43195 0 0) "twitterClass.py" "mlb-cities.txt" "anonBrowser.py" "9-twitterRecon.py" "9-twitterInterests.py" "9-twitterGeo.py" "9-twitterClass.py" "8-googleJumbled.py" "8-googleJson.py" "8-anonGoogle.py" "7-imageMirror.py" "6-linkParser.py" "5-kittenTest.py" "4-printCookies.py" "3-userAgentTest.py" "2-proxyTest.py" "10-sendSpam.py" "10-sendMail.py" "1-viewPage.py" ".svn/" ".pydevproject" ".project" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/ViolentPython/" (22361 43674 0 0) "CH7/" "CH6/" "CH5/" "CH4/" "CH3/" "CH2/" "CH1/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/Networking/" (22697 50829 0 0) "CH2/" "CH1/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Python/pythonPractice/" (22372 16543 0 0) "zellers.py" "ViolentPython/" "rps.py" "random.pyc" "random.py" "Queue.pyc" "Queue.py" "pig_latin.py" "nims.py" "Networking/" "listIntersect.py" "isPhoneNumber.py" "is_palindrome.py" "hangman.py" "dictionary.py" "dataManipNotes.txt" "cumulative_sum.py" "countdown.py" "collision.py" "cipher.py" "Automate/" "assignment1.py" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Python/" (22319 26203 0 0) "pythonPractice/" "Notes/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/jacobsLab/papers/" (23176 9159 0 0) "trunk/" "trainTheta/" "TH_SME/" "hippoStimImpair_backup/" "hippoStimImpair/" "demo_paper.tex" ".DS_Store" "#svn-commit.tmp#" "../" "./")
+
+ ("/Users/abhigoyal/Documents/jacobsLab/" (23176 9159 0 0) "W2.pdf" "trunk/" "SfN reimbursement.xls" "SfN receipts2.docx" "SfN receipts.docx" "rhinox/" "Reviews/" "Presentations/" "papers/" "Literature/" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/emacs/sampleCode/" (23177 24506 0 0) "python/" "../" "./")
+
+ ("/Users/abhigoyal/Documents/emacs/" (23177 24501 0 0) "sampleCode/" "readMe.org~" "Readme.org" "../" "./")
+
+ ("/Users/abhigoyal/documents/jacobsLab/papers/" (23176 9159 0 0) "trunk/" "trainTheta/" "TH_SME/" "hippoStimImpair_backup/" "hippoStimImpair/" "demo_paper.tex" ".DS_Store" "#svn-commit.tmp#" "../" "./")
+
+ ("/Users/abhigoyal/documents/jacobsLab/" (23176 9159 0 0) "W2.pdf" "trunk/" "SfN reimbursement.xls" "SfN receipts2.docx" "SfN receipts.docx" "rhinox/" "Reviews/" "Presentations/" "papers/" "Literature/" ".DS_Store" "../" "./")
+
+ ("/Users/" (22600 39444 0 0) "Shared/" "Guest/" "abhigoyal/" ".localized" "../" "./")
+
+ ("/Users/abhigoyal/Documents/Java 1004/" (22303 57652 0 0) "Project5/" "Project4/" "Project3/" "Project2/" "Project 1/" "HW5/" "HW4/" "HW3/" "HW2/" "HW1/" "Example Codes/" "ag3417_HWK6.docx" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/Documents/" (23176 51540 0 0) "Zoom/" "Wang Lab/" "Transactions.xlsx" "SOLIDWORKS Corp.zip" "SOLIDWORKS Corp/" "senDes/" "Rental Payment Documentation.xlsx" "QP/" "Python/" "Pictures/" "Orgo/" "NYU/" "Notes/" "MyMC/" "My EndNote Library.enl" "My EndNote Library.Data/" "Music Hum/" "Misc/" "Med School/" "MATLAB/" "Lease Application.zip" "League of Legends/" "Languages/" "Kaplan/" "Job Stuff/" "jni files.docx" "Java 1004/" "jacobsLab/" "HW1/" "Housing Stuff/" "EndNote Library.enl" "EndNote Library.Data/" "emacs/" "Electrophys/" "eeglab13_6_5b/" "DSP/" "Digital Editions/" "dataStructures/" "Data/" "CU_Wang_Lab/" "CS Theory/" "Color Schemes/" "ChemDraw/" "BME/" "Biosignals/" "BIOS/" "Biochem/" "Bio/" "BCI/" "Bayesian ML/" "Arduino/" "Apple Scripts/" "AdvancedProgramming/" "Adobe CS 5.5/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/documents/" (23176 51540 0 0) "Zoom/" "Wang Lab/" "Transactions.xlsx" "SOLIDWORKS Corp.zip" "SOLIDWORKS Corp/" "senDes/" "Rental Payment Documentation.xlsx" "QP/" "Python/" "Pictures/" "Orgo/" "NYU/" "Notes/" "MyMC/" "My EndNote Library.enl" "My EndNote Library.Data/" "Music Hum/" "Misc/" "Med School/" "MATLAB/" "Lease Application.zip" "League of Legends/" "Languages/" "Kaplan/" "Job Stuff/" "jni files.docx" "Java 1004/" "jacobsLab/" "HW1/" "Housing Stuff/" "EndNote Library.enl" "EndNote Library.Data/" "emacs/" "Electrophys/" "eeglab13_6_5b/" "DSP/" "Digital Editions/" "dataStructures/" "Data/" "CU_Wang_Lab/" "CS Theory/" "Color Schemes/" "ChemDraw/" "BME/" "Biosignals/" "BIOS/" "Biochem/" "Bio/" "BCI/" "Bayesian ML/" "Arduino/" "Apple Scripts/" "AdvancedProgramming/" "Adobe CS 5.5/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/abhigoyal/documents/emacs/" (23176 52270 0 0) "readMe.org~" "Readme.org" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

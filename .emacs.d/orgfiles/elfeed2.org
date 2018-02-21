@@ -1,0 +1,22 @@
+* Blogs                                                              :elfeed:
+** Comics                                                         :webcomics:
+***  [[https://xkcd.com/rss.xml][xkcd]]                                                            :active:
+** emacs                                                              :emacs:
+***  [[http://cestlaz.github.io/rss.xml][C'est la Z]]
+***  [[http://pragmaticemacs.com/feed/][Pragmatic Emacs]]
+** Computer Science                                                 :compsci:
+***  [[http://sachachua.com/blog/feed/][Sacha Chua]]                                                      :active:
+***  [[https://blog.aaronbieber.com/feed.xml][The Chronicle]]
+** Science                                                          :science:
+***  [[https://www.universetoday.com/feed/][Universe Today]]
+***  [[https://www.npr.org/sections/13.7/][Cosmos and Culture]]
+***  [[http://www.askamathematician.com/feed/][Ask a mathematician]]
+***  [[http://backreaction.blogspot.com/rss.xml][Backreaction]]
+***  [[http://feeds.feedblitz.com/dailygalaxy&x=1][The Daily Galaxy]]
+***  [[https://www.itsokaytobesmart.com/rss][It's ok to be smart]]
+***  [[https://www.math.columbia.edu/~woit/wordpress/?feed=rss2][Woit's blog]]
+***  [[https://profmattstrassler.com/feed/][Strassler Physics]]
+***  [[https://theresearchwhisperer.wordpress.com/feed/][The Research Whisperer]]
+***  [[https://www.johndcook.com/blog/feed][The Endeavour]]
+***  [[https://www.johndcook.com/blog/feed][Google Research Blog]]
+** Lifestyle                                                           :life:

@@ -1,0 +1,257 @@
+(load-theme 'afternoon t)
+(setq inhibit-startup-screen t)
+(fset 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "<f5>") 'revert-buffer)
+
+(defun ag/setwins ()
+  "Open emacs with the right configuration of windows"
+  (interactive)
+  (ace-window 1)
+  (delete-other-windows)
+  (split-window-right)
+  (ace-window 2)
+  (split-window-below)
+  (ace-window 1))
+
+(define-prefix-command 'z-map)
+(global-set-key (kbd "C-2") 'z-map)
+
+(define-key 'z-map (kbd "i") '(lambda () (interactive) (find-file "~/.emacs.d/myinit.org")))
+(define-key 'z-map (kbd "s") '(lambda () (interactive) (find-file "~/.emacs.d/orgfiles/todo.org")))
+(define-key 'z-map (kbd "n") '(lambda () (interactive) (find-file "~/.emacs.d/orgfiles/notes.org")))
+(define-key 'z-map (kbd "h") '(lambda () (interactive) (find-file "~/Documents/jacobsLab/papers/hippoStimImpair/manuscript_2.tex")))
+
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))) 
+
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(add-hook 'org-capture-mode-hook 'evil-insert-state)
+
+(setq org-agenda-files (list "~/.emacs.d/orgfiles/todo.org"))
+
+(setq org-capture-templates
+      '(("a" "Appointment" entry (file  "~/.emacs.d/orgfiles/todo.org") 
+	 "* TODO %?\nDEADLINE: %^T \n %i\n")
+	("t" "TODO" entry (file "~/.emacs.d/orgfiles/todo.org")
+	 "* TODO %?\nSCHEDULED: %t \n %i\n")
+	("n" "Note" entry (file+headline "~/.emacs.d/orgfiles/notes.org" "Notes")
+	 "* %?\n%T")
+	("b" "Blog" entry (file "~/.emacs.d/orgfiles/elfeed2.org") 
+	 "* %? %^L\n")))
+;; notification from diary files
+
+(require 'appt)
+(appt-activate t)
+
+(setq appt-message-warning-time 30) ; Show notification 5 minutes before event
+(setq appt-display-interval appt-message-warning-time) ; Disable multiple reminders
+(setq appt-display-mode-line nil)
+
+; Use appointment data from org-mode
+(defun my-org-agenda-to-appt ()
+  (interactive)
+  (setq appt-time-msg-list nil)
+  (org-agenda-to-appt))
+
+; Update alarms when.
+; (1) ... Starting Emacs
+(my-org-agenda-to-appt)
+
+; (2) ... Everyday at 12:05am (useful in case you keep Emacs always on)
+(run-at-time "12:05am" (* 24 3600) 'my-org-agenda-to-appt)
+
+; (3) ... When TODO.txt is saved
+(add-hook 'after-save-hook
+	  '(lambda ()
+	     (if (string= (buffer-file-name) (concat (getenv "HOME") "/.emacs.d/orgfiles/todo.org"))
+		 (my-org-agenda-to-appt))))
+
+; Display appointments as a window manager notification
+(setq appt-disp-window-function 'my-appt-display)
+(setq appt-delete-window-function (lambda () t))
+
+(setq my-appt-notification-app (concat (getenv "HOME") "/.emacs.d/appt-notification/appt.sh"))
+
+(defun my-appt-display (min-to-app new-time msg)
+  (if (atom min-to-app)
+      (start-process "my-appt-notification-app" nil my-appt-notification-app min-to-app msg)
+    (dolist (i (number-sequence 0 (1- (length min-to-app))))
+      (start-process "my-appt-notification-app" nil my-appt-notification-app (nth i min-to-app) (nth i msg)))))
+
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
+(defalias 'list-buffers 'ibuffer)
+
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
+
+(use-package swiper
+  :ensure t
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (setq enable-recursive-minibuffers t)
+    (global-set-key "\C-s" 'swiper)
+    (global-set-key (kbd "C-c C-r") 'ivy-resume)
+    (global-set-key (kbd "<f6>") 'ivy-resume)
+    (global-set-key (kbd "M-x") 'counsel-M-x)
+    (global-set-key (kbd "<f1> f") 'counsel-describe-function)
+    (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+    (global-set-key (kbd "<f1> l") 'counsel-find-library)
+    (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+    (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+    (global-set-key (kbd "C-c g") 'counsel-git)
+    (global-set-key (kbd "C-c j") 'counsel-git-grep)
+    (global-set-key (kbd "C-c k") 'counsel-ag)
+    (global-set-key (kbd "C-x l") 'counsel-locate)
+    (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+    (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+    ))
+
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode t))
+
+(use-package jedi
+     :ensure t
+     :init
+     (add-hook 'python-mode-hook 'jedi:setup))
+
+(use-package yasnippet
+  :ensure t
+  :init
+  (yas-global-mode 1))
+
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (global-aggressive-indent-mode 1))
+
+(use-package iedit
+  :ensure t)
+
+(use-package ace-window
+  :ensure t
+  :init
+  (progn
+    (setq aw-scope 'frame)
+    (global-set-key (kbd "M-o") 'ace-window)
+    (global-set-key [remap other-window] 'ace-window))) 
+
+(defun ag/swapwin ()
+  "Swap contents of window while keeping cursor on current window"
+  (interactive)
+  (ace-swap-window)
+  (aw-flip-window))
+
+(global-set-key (kbd "M-m") 'ag/swapwin)
+
+(require 'atomic-chrome)
+(atomic-chrome-start-server)
+
+(setq atomic-chrome-buffer-open-style 'frame)
+
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+(add-hook 'LaTeX-mode-hook 'visual-line-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(setq reftex-plug-into-AUCTeX t)
+(setq TeX-PDF-mode t)
+
+(defadvice TeX-insert-quote (around wrap-region activate)
+  (cond
+   (mark-active
+    (let ((skeleton-end-newline nil))
+      (skeleton-insert `(nil ,TeX-open-quote _ ,TeX-close-quote) -1)))
+   ((looking-at (regexp-opt (list TeX-open-quote TeX-close-quote)))
+    (forward-char (length TeX-open-quote)))
+   (t
+    ad-do-it)))
+(put 'TeX-insert-quote 'delete-selection nil)
+
+(pdf-tools-install)
+(setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
+TeX-source-correlate-start-server t)
+
+;; refresh buffer
+(add-hook 'TeX-after-compilation-finished-functions
+#'TeX-revert-document-buffer)
+
+(global-set-key (kbd "C-x w") 'elfeed)
+
+(defun ag/elfeed-show-all ()
+  (interactive)
+  (bookmark-maybe-load-default-file)
+  (bookmark-jump "elfeed-all"))
+(defun ag/elfeed-show-emacs ()
+  (interactive)
+  (bookmark-maybe-load-default-file)
+  (bookmark-jump "elfeed-emacs"))
+(defun ag/elfeed-show-active ()
+  (interactive)
+  (bookmark-maybe-load-default-file)
+  (bookmark-jump "elfeed-active"))
+
+(defun ag/elfeed-show-compsci ()
+  (interactive)
+  (bookmark-maybe-load-default-file)
+  (bookmark-jump "elfeed-compsci"))
+
+(defun ag/elfeed-show-webcomics ()
+  (interactive)
+  (bookmark-maybe-load-default-file)
+  (bookmark-jump "elfeed-comics"))
+
+(defun ag/elfeed-load-db-and-open ()
+  "Wrapper to load the elfeed db from disk before opening"
+  (interactive)
+  (elfeed-db-load)
+  (elfeed)
+  (elfeed-search-update--force))
+
+;;write to disk when quiting
+(defun bjm/elfeed-save-db-and-bury ()
+  "Wrapper to save the elfeed db to disk before burying buffer"
+  (interactive)
+  (elfeed-db-save)
+  (quit-window))
+
+
+(use-package elfeed
+  :ensure t
+  :bind (:map elfeed-search-mode-map
+	      ("A" . ag/elfeed-show-all)
+	      ("E" . ag/elfeed-show-emacs)
+	      ("C" . ag/elfeed-show-webcomics)
+	      ("T" . ag/elfeed-show-compsci)
+	      ("q" . bjm/elfeed-save-db-and-bury)))    
+
+;; Load elfeed-org
+(require 'elfeed-org)
+
+;; Initialize elfeed-org
+;; This hooks up elfeed-org to read the configuration when elfeed
+;; is started with =M-x elfeed=
+(elfeed-org)
+
+;; Optionally specify a number of files containing elfeed
+;; configuration. If not set then the location below is used.
+;; Note: The customize interface is also supported.
+(setq rmh-elfeed-org-files (list "~/.emacs.d/orgfiles/elfeed2.org"))

@@ -1,0 +1,40 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("elfeed-comics"
+ (location . "@6-months-ago +unread +webcomics")
+ (tags "webcomics" "unread")
+ (handler . elfeed-search-bookmark-handler))
+("elfeed-compsci"
+ (location . "@6-months-ago +compsci +unread")
+ (tags "unread" "compsci")
+ (handler . elfeed-search-bookmark-handler))
+("elfeed-active"
+ (location . "@6-months-ago +active +unread")
+ (tags "unread" "active")
+ (handler . elfeed-search-bookmark-handler))
+("elfeed-emacs"
+ (location . "@6-months-ago +emacs +unread")
+ (tags "unread" "emacs")
+ (handler . elfeed-search-bookmark-handler))
+("elfeed-all"
+ (location . "@6-months-ago +unread")
+ (tags "unread")
+ (handler . elfeed-search-bookmark-handler))
+("org-capture-last-stored-marker"
+ (filename . "~/.emacs.d/orgfiles/elfeed2.org")
+ (front-context-string . "**  [[Http://pra")
+ (rear-context-string . "agmatic Emacs]]\n")
+ (position . 714))
+("org-refile-last-stored"
+ (filename . "~/.emacs.d/orgfiles/elfeed2.org")
+ (front-context-string . "**  [[http://pra")
+ (rear-context-string . "agmatic Emacs]]\n")
+ (position . 713))
+("org-capture-last-stored"
+ (filename . "~/.emacs.d/orgfiles/elfeed2.org")
+ (front-context-string . "*  [[https://www")
+ (rear-context-string . "e Endeavour]]\nb\n")
+ (position . 1529))
+)
