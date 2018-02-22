@@ -2,7 +2,11 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("elfeed-comics"
+(("elfeed-unread"
+ (location . "@1-months-ago +unread")
+ (tags "unread")
+ (handler . elfeed-search-bookmark-handler))
+("elfeed-comics"
  (location . "@6-months-ago +unread +webcomics")
  (tags "webcomics" "unread")
  (handler . elfeed-search-bookmark-handler))
@@ -19,8 +23,8 @@
  (tags "unread" "emacs")
  (handler . elfeed-search-bookmark-handler))
 ("elfeed-all"
- (location . "@6-months-ago +unread")
- (tags "unread")
+ (location . "@1-months-ago")
+ (tags)
  (handler . elfeed-search-bookmark-handler))
 ("org-capture-last-stored-marker"
  (filename . "~/.emacs.d/orgfiles/elfeed2.org")
@@ -33,8 +37,8 @@
  (rear-context-string . "agmatic Emacs]]\n")
  (position . 713))
 ("org-capture-last-stored"
- (filename . "~/.emacs.d/orgfiles/elfeed2.org")
- (front-context-string . "*  [[https://www")
- (rear-context-string . "e Endeavour]]\nb\n")
- (position . 1529))
+ (filename . "~/.emacs.d/orgfiles/todo.org")
+ (front-context-string . "* TODO Check out")
+ (rear-context-string . "2018-02-21 Wed>\n")
+ (position . 2018))
 )

@@ -71,11 +71,11 @@
   ("flyspell-correct-word-before-point" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("interactive" .
-   [3 0 0 0 0 0 0 0 0 0 0])
+   [4 0 0 0 0 0 0 0 0 0 0])
   ("find-file" .
    [1 0 0 0 0 0 0 0 0])
   ("defun" .
-   [2 0 0 0 0])
+   [3 0 0 0 0])
   ("ace-swap-window" .
    [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
   ("aw-flip-keys" .
@@ -107,4 +107,10 @@
   ("cWatcher" .
    [1 0 0 0 0 0 0 0])
   ("elfeed-entry" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])))
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("bookmark-maybe-load-default-file" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("bookmark" .
+   [0 0 0 0 1 0 0 0])
+  ("bookmark-jump" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])))

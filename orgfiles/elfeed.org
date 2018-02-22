@@ -1,0 +1,8 @@
+* Blogs                                                              :elfeed:
+** Comics                                                         :webcomics:
+***  [[https://xkcd.com/rss.xml][xkcd]]                                                            :active:
+** emacs                                                              :emacs:
+***  [[http://cestlaz.github.io/rss.xml][C'est la Z]]
+** Computer Science                                                 :compsci:
+***  [[http://sachachua.com/blog/feed/][Sacha Chua]]                                                      :active:
+** Misc

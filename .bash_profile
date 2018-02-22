@@ -23,3 +23,5 @@ alias emacs='/usr/local/bin/emacs.sh'
 alias emacsclient='/usr/local/bin/ec.sh'
 
 alias ec='/usr/local/bin/ec.sh'
+
+ssh-add -A 2>/dev/null;
